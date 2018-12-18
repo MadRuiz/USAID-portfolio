@@ -1,0 +1,32 @@
+﻿body {
+    background-color: whitesmoke;
+    background-image: url("Images/banner-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.app-login {
+   
+    height: 35rem;
+    margin: 0 auto;
+}
+
+.app-login-form {
+    border: white 1px solid;
+    color: white;
+    padding: 5rem;
+}

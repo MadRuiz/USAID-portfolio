@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Edad";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="page-header">
+            <h1>Cálculo de edad</h1>
+        </div>
+        <div class="col-sm-4">
+            
+
+                <form action="@Url.Action("Edad","Demo")" method="post" class="form-inline">
+                    <div class="form-group col-sm-9">
+                        <input type="number" class="form-control" name="bornYear" value="" autocomplete="off" placeholder="Ingrese su año de nacimiento" />
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <input type="submit" class="btn btn-info" name="btn" value="Calcular" />
+
+                    </div>
+                    
+                </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-12">
+            @if (ViewBag.showing == true)
+            {
+                <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Su edad es de : </strong> @ViewBag.result
+                </div>
+            }
+        </div>
+    </div>
+
+</div>

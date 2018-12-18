@@ -1,0 +1,57 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*CSS del login
+    body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+}
+
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.app-login {
+    background-color: whitesmoke;
+    background-image: url("Images/banner-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    padding: 15rem;
+}
+
+.app-login-form {
+    border: white 1px solid;
+    color: white;
+    padding: 5rem;
+}
+
+*/

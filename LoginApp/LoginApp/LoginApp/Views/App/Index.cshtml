@@ -1,0 +1,68 @@
+﻿@model IEnumerable<LoginApp.Models.UsuariosModel>
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="container">
+    <h2>Bienvenido, @Session["Nombre"]</h2>
+
+    <p>
+        @Html.ActionLink("Agregar usuario", "Create")
+    </p>
+    <table class="table table-striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConfirmPass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pass)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ConfirmPass)
+                </td>
+                <td>   
+                    @Html.DisplayFor(modelItem => item.Rol)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.IdLogin }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.IdLogin }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.IdLogin })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
+
