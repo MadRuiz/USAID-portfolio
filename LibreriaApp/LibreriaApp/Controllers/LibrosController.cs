@@ -19,12 +19,13 @@ namespace LibreriaApp.Controllers
 
             var query = (from libro in con.Libros
                             join autor in con.Autores on libro.Id_Autor equals autor.Id_Autor
-                            orderby autor.Id_Autor
+                            orderby libro.Id_Libro
                             select new EscritosViewModel()
                             {
                                Autor = autor.Nombre + " " + autor.Apellido, 
                                Libro = libro.Nombre,
-                               Paginas = libro.Paginas
+                               Paginas = libro.Paginas,
+                               Promedio =  autor.Edad.
                             }).ToList();
 
             return View(query);

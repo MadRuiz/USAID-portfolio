@@ -10,5 +10,6 @@ namespace LibreriaApp.Models
         public string Autor { get; set; }
         public string Libro { get; set; }
         public int Paginas { get; set; }
+        public double Promedio { get; set; }
     }
 }
