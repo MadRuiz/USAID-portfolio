@@ -1,0 +1,73 @@
+﻿<div class="component_head">
+    <h3>
+        Últimas reservas
+    </h3>
+    <hr />
+</div>
+<div class="component_body">
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-default btn-block" id="add_button" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-plus-sign"></span> Agregar Reserva
+            </button>
+
+            @{Html.RenderPartial("../Components/Modals/_NuevaReservaModal"); }
+
+        </div>
+        <br />
+        <div class="row">
+            <table class="table table-striped">
+                <tr>
+                    <th>#</th>
+                    <th>Reservante</th>
+                    <th>Aula</th>
+                    <th>Fecha</th>
+                    <th>Bloque</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Fulano</td>
+                    <td>Aula 23</td>
+                    <td>Hoy</td>
+                    <td>Bloque 1 </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mengano</td>
+                    <td>Aula 15</td>
+                    <td>Mañana</td>
+                    <td>Bloque 4 </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sutano</td>
+                    <td>Aula 8</td>
+                    <td>Hoy</td>
+                    <td>Bloque 2 </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Metano (?)</td>
+                    <td>Aula 37</td>
+                    <td>Hoy</td>
+                    <td>Bloque 3 </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Propano (?)</td>
+                    <td>Aula 19</td>
+                    <td>Mañana</td>
+                    <td>Bloque 2 </td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-default pull-right" id="">
+                <span class="glyphicon glyphicon-new-window"></span> Ver todas
+            </button>
+        </div>
+        <br />
+    </div>
+    
+</div>
+

@@ -14,9 +14,14 @@ namespace LibreriaApp.Controllers
 
         public ActionResult Index()
         {
+<<<<<<< HEAD
             var query = from autor in con.Autores select autor;
             
             return View(query.ToList());
+=======
+            var data = from autor in con.Autores select autor;
+            return View(data);
+>>>>>>> 764457860f9a075f181c7e5b6fc4fc5c3cc520c4
         }
 
         public ActionResult Create()
@@ -28,6 +33,10 @@ namespace LibreriaApp.Controllers
         {
             con.Autores.Add(data);
             con.SaveChanges();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 764457860f9a075f181c7e5b6fc4fc5c3cc520c4
             return RedirectToAction("Index");
         }
     }

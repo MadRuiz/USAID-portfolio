@@ -11,5 +11,9 @@ namespace LibreriaApp.Models
     {
         public DbSet<AutoresModel> Autores { get; set; }
         public DbSet<LibrosModel> Libros { get; set; }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 764457860f9a075f181c7e5b6fc4fc5c3cc520c4
     }
 }

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2046
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaApp", "LibreriaApp\LibreriaApp.csproj", "{F906B244-3331-41A7-B9E9-604951674192}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaApp", "LibreriaApp\LibreriaApp.csproj", "{FD95A75F-93B2-4E74-A173-2C0ADD61DAB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F906B244-3331-41A7-B9E9-604951674192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F906B244-3331-41A7-B9E9-604951674192}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F906B244-3331-41A7-B9E9-604951674192}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F906B244-3331-41A7-B9E9-604951674192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD95A75F-93B2-4E74-A173-2C0ADD61DAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD95A75F-93B2-4E74-A173-2C0ADD61DAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD95A75F-93B2-4E74-A173-2C0ADD61DAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD95A75F-93B2-4E74-A173-2C0ADD61DAB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {63A72D1E-4278-4EAC-9B32-A2B8C5F07B76}
+		SolutionGuid = {C56F2E65-FDEB-4396-9C3F-CD5356BA43FC}
 	EndGlobalSection
 EndGlobal
